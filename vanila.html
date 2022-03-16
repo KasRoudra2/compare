@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>VanilaJS OnChange</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div>
+        <p>Name : <input type="text" id="input"></p>
+        <h1>Hello <span id="span"></span></h1>
+    </div>
+    <script>
+        const input = document.getElementById("input");
+        const name = document.getElementById("span");
+        input.onkeyup = function(){
+            const value = input.value;
+            name.innerText = value;
+        };
+    </script>
+</body>
+</html>

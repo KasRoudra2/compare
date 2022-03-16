@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>jQuery OnChange</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <!--<script src="https://unpkg.com/jquery@latest"></script>-->
+</head>
+<body>
+    <div>
+        <p>Name : <input type="text" id="input"></p>
+        <h1>Hello <span id="name"></span></h1>
+    </div>
+    <script>
+    $("#input").keyup(()=>{
+        const name = $("#input").val();
+        $("#name").text(name);
+    });
+    </script>
+</body>
+</html>
